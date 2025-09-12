@@ -1,4 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
+<<<<<<< HEAD
 import { StyleSheet, Text, View, Image, TouchableOpacity, FlatList, ScrollView } from 'react-native';
 import Entypo from '@expo/vector-icons/Entypo';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
@@ -40,6 +41,73 @@ export default function App() {
           <Feather name="image" size={24} color="#fff" />
         </View>
       )}
+=======
+import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
+import Strong from './components/index'
+import Ionicons from '@expo/vector-icons/Ionicons';
+import Entypo from '@expo/vector-icons/Entypo';
+import MaterialIcons from '@expo/vector-icons/MaterialIcons';
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
+import AntDesign from '@expo/vector-icons/AntDesign';
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <StatusBar style="auto" />
+      <View style={styles.followersContainer}>
+        <View style={styles.imageSamples}>
+          <Image style={styles.person} source={{ uri: "https://jornalistainclusivo.com/wp-content/uploads/2022/10/Gio-pessoa-com-Sindrome-de-Down-Foto-Uinstock-Iza-Guedes-copiar.jpg" }} />
+          <Image style={styles.person} source={{ uri: "https://static.vecteezy.com/ti/fotos-gratis/t2/6913998-jovem-estudante-com-laptop-sorrindo-usando-fone-de-ouvido-durante-video-chamada-homem-com-laptop-imagens-foto.jpg" }} />
+          <Image style={styles.person} source={{ uri: "https://292aa00292a014763d1b-96a84504aed2b25fc1239be8d2b61736.ssl.cf1.rackcdn.com/PostImagem/41559/banco-de-imagens-a-importacircncia-de-desenvolver-um-para-sua-empresa_o1fa1bg74m1cgi1fmpinmp7kq39e.jpg" }} />
+        </View>
+        <View style={styles.knowPeople}>
+          <Text style={styles.knowPeopleText}>Seguido por <Strong>joaocorreia09, vanda.carvalho</Strong> e <Strong>16 outros amigos</Strong></Text>
+        </View>
+      </View>
+
+      <View style={styles.profileActionButtonsContainer}>
+        <View style={styles.textActionButtons}>
+          <TouchableOpacity style={[styles.actionButton, styles.follow]}><Text style={styles.followText}>Seguir</Text></TouchableOpacity>
+          <TouchableOpacity style={[styles.actionButton]}><Text>Mensagem</Text></TouchableOpacity>
+          <TouchableOpacity style={[styles.actionButton]}><Text>Contactar</Text></TouchableOpacity>
+        </View>
+        <TouchableOpacity style={styles.addFriend}><Ionicons name="person-add-outline" size={16} color="black" /></TouchableOpacity>
+      </View>
+
+      <View style={styles.hightlightsContainer}>
+        <View style={styles.highlight}>
+          <View style={styles.iconContainer}>
+            <Entypo name="light-bulb" size={36} color="#d4d804ff" />
+          </View>
+          <Text style={styles.highlightName}>Design Tips</Text>
+        </View>
+        <View style={styles.highlight}>
+          <View style={styles.iconContainer}>
+            <MaterialIcons name="work" size={36} color="#d4d804ff" />
+          </View>
+          <Text style={styles.highlightName}>Portfolio</Text>
+        </View>
+        <View style={styles.highlight}>
+          <View style={styles.iconContainer}>
+            <MaterialIcons name="source" size={36} color="#d4d804ff" />
+          </View>
+          <Text style={styles.highlightName}>Resources</Text>
+        </View>
+        <View style={styles.highlight}>
+          <View style={styles.iconContainer}>
+            <MaterialCommunityIcons name="cursor-default-click" size={36} color="#d4d804ff" />
+          </View>
+          <Text style={styles.highlightName}>UI Basics</Text>
+        </View>
+        <View style={styles.highlight}>
+          <View style={styles.iconContainer}>
+            <AntDesign name="pluscircleo" size={36} color="#d4d804ff" />
+          </View>
+          <Text style={styles.highlightName}>Outro</Text>
+        </View>
+        
+      </View>
+>>>>>>> 2aeafd9036665584f2085b52de7fd31b12ceb256
     </View>
   )
 
@@ -216,6 +284,7 @@ const styles = StyleSheet.create({
     paddingTop: 40,
     paddingBottom: 20,
   },
+<<<<<<< HEAD
 
   //HEADER
   header: {
@@ -277,17 +346,26 @@ const styles = StyleSheet.create({
     color: "#0049b0ff",
   },
   //PEOPLE
+=======
+>>>>>>> 2aeafd9036665584f2085b52de7fd31b12ceb256
   followersContainer: {
     width: "100%",
     gap: 5,
     flexDirection: "row",
     paddingHorizontal: 50,
     justifyContent: "center",
+<<<<<<< HEAD
     alignItems: "center",
     marginTop: 10,
   },
   imageSamples: {
     flexDirection: "row",
+=======
+    alignItems: "center"
+  },
+  imageSamples: {
+    flexDirection: "row"
+>>>>>>> 2aeafd9036665584f2085b52de7fd31b12ceb256
   },
   person: {
     width: 35,
@@ -295,10 +373,17 @@ const styles = StyleSheet.create({
     borderColor: "#fff",
     borderWidth: 2,
     borderRadius: 40,
+<<<<<<< HEAD
     marginLeft: -10,
   },
   knowPeopleText: {
     fontSize: 14,
+=======
+    marginLeft: -10
+  },
+  knowPeopleText: {
+    fontSize: 14
+>>>>>>> 2aeafd9036665584f2085b52de7fd31b12ceb256
   },
   //BTN ACTIONS
   profileActionButtonsContainer: {
@@ -306,12 +391,20 @@ const styles = StyleSheet.create({
     paddingHorizontal: 5,
     alignItems: "center",
     gap: 15,
+<<<<<<< HEAD
     marginTop: 10,
+=======
+    marginTop: 20,
+>>>>>>> 2aeafd9036665584f2085b52de7fd31b12ceb256
   },
   textActionButtons: {
     flex: 1,
     flexDirection: "row",
+<<<<<<< HEAD
     gap: 5,
+=======
+    gap: 5
+>>>>>>> 2aeafd9036665584f2085b52de7fd31b12ceb256
   },
   actionButton: {
     width: "33.3%",
@@ -319,13 +412,21 @@ const styles = StyleSheet.create({
     alignItems: "center",
     padding: 5,
     borderRadius: 8,
+<<<<<<< HEAD
     height: 30,
+=======
+    height: 30
+>>>>>>> 2aeafd9036665584f2085b52de7fd31b12ceb256
   },
   follow: {
     backgroundColor: "#0095F6",
   },
   followText: {
+<<<<<<< HEAD
     color: "#fff",
+=======
+    color: "#fff"
+>>>>>>> 2aeafd9036665584f2085b52de7fd31b12ceb256
   },
   addFriend: {
     alignItems: "center",
@@ -333,6 +434,7 @@ const styles = StyleSheet.create({
     height: 30,
     backgroundColor: "#EFEFEF",
     width: 30,
+<<<<<<< HEAD
     borderRadius: 5,
   },
   //HIGHLIGHTS
@@ -345,6 +447,20 @@ const styles = StyleSheet.create({
   },
   highlight: {
     gap: 4,
+=======
+    borderRadius: 5
+  },
+  //HILIGHTS
+  hightlightsContainer: {
+    flexDirection: "row",
+    marginTop: 25,
+    gap: 16,
+    paddingHorizontal: 5,
+    justifyContent: "center"
+  },
+  highlight: {
+    gap: 4
+>>>>>>> 2aeafd9036665584f2085b52de7fd31b12ceb256
   },
   iconContainer: {
     alignItems: "center",
@@ -354,6 +470,7 @@ const styles = StyleSheet.create({
     height: 60,
     borderRadius: 100,
     borderColor: "#cacacaff",
+<<<<<<< HEAD
     borderWidth: 4,
   },
   highlightName: {
@@ -399,4 +516,11 @@ post: {
   height: "100%",
 },
 
+=======
+    borderWidth: 4
+  },
+  highlightName: {
+    textAlign: "center"
+  }
+>>>>>>> 2aeafd9036665584f2085b52de7fd31b12ceb256
 });
